@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Usuario{
+-nombre:String;
+-id: String
+-tipoUsuario: String;
+}
+class ServicioDescarga{
++descargar(cancion: String, usuario: Usuario):void
+}
+class ProxyServicioDescarga{
+-servicioDescara: ServicioDescarga
++descargar(cancion: String, usuario: Usuario):void
+}
+
+interface IServicioDescarga{
++descargar(cancion: String, usuario: Usuario):void
+}
+
+IServicioDescarga <|-- ServicioDescarga
+IServicioDescarga <|-- ProxyServicioDescarga
+
+@enduml
