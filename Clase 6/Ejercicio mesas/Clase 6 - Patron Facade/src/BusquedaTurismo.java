@@ -15,7 +15,7 @@ public class BusquedaTurismo implements IBusquedaTurismo {
         List<String> hoteles = BusquedaHotel.buscarHoteles(fechaDesde, fechaHasta, ciudad);
         System.out.println("Hoteles encontrados:");
         for (String hotel : hoteles) {
-            System.out.println(hotel);
+            System.out.println(hotel); //ok
         }
     }
 }
