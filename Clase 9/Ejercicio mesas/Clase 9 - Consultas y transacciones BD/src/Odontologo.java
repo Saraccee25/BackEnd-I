@@ -46,7 +46,7 @@ public class Odontologo {
             updateStatement.setString(2, "100");
             updateStatement.execute();
 
-            
+
             rs = statement.executeQuery(SELECT_ALL);
             System.out.println("Después de la actualización:");
             while (rs.next()) {
