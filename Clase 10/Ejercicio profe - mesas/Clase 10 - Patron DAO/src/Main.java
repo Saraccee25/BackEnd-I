@@ -13,6 +13,8 @@ public class Main {
 
         //creamos un medicamento
         Medicamento paracetamol = new Medicamento("Paracetamol", "Bayer", 11, 2500d, 11);
+        medicamentoService.guardar(paracetamol);
+        
         // Buscar el medicamento por ID
         Medicamento medicamentoBuscado = medicamentoService.buscarPorId(paracetamol.getId());
         if (medicamentoBuscado != null) {

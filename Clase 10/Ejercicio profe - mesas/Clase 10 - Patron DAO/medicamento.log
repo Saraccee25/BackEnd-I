@@ -8,3 +8,7 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" bec
 	at dao.implementacion.MedicamentoDAOH2.buscarPorId(MedicamentoDAOH2.java:13)
 	at servicio.MedicamentoService.buscarPorId(MedicamentoService.java:22)
 	at Main.main(Main.java:17)
+[2024-08-06 22:32:09] [ INFO ] [MedicamentoDAOH2:19] Comenzamos a persistir un medicamento
+[2024-08-06 22:32:09] [ INFO ] [MedicamentoDAOH2:42] Este es el medicamento que se guardó Paracetamol
+[2024-08-06 22:32:09] [ INFO ] [MedicamentoDAOH2:62] Buscando medicamento con ID: 1
+[2024-08-06 22:32:09] [ INFO ] [MedicamentoDAOH2:81] Medicamento encontrado: Paracetamol
