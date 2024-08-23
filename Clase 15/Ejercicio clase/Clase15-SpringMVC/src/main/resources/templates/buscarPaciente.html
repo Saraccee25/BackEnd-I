@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Buscar Paciente</title>
+</head>
+<body>
+<h1>Información del Paciente</h1>
+
+<p th:if="${error}" th:text="${error}"></p>
+
+<div th:if="${nombre}">
+    <p>Nombre: <span th:text="${nombre}"></span></p>
+    <p>Apellido: <span th:text="${apellido}"></span></p>
+    <p>Domicilio: <span th:text="${domicilio}"></span></p>
+    <p>DNI: <span th:text="${dni}"></span></p>
+    <p>Fecha de Alta: <span th:text="${fechaAlta}"></span></p>
+</div>
+
+</body>
+</html>
+_
